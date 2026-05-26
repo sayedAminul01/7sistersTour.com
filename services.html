@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our comprehensive travel services - room booking, car rental, tour packages, and corporate solutions.">
+  <title>Our Services - 7 Sisters Tour</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🏔️</div>
+          <div class="logo-text">7SistersTour.com <span></span></div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+          <a href="contact.html" class="btn btn-gold nav-cta">Book Now</a>
+          <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-gold mobile-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <section style="padding: 140px 0 96px; background: var(--bg-section);">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge">Our Services</span>
+        <h1 class="section-title">Complete Travel <span>Solutions</span></h1>
+        <p class="section-sub">Everything you need for a perfect Northeast India journey - from comfortable stays to reliable transportation and expertly crafted tour packages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background: var(--bg);">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Room Booking">
+            <div class="card-badge">Popular</div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon">🏨</div>
+            <h3 class="card-title">Room Booking</h3>
+            <p class="card-desc">Handpicked hotels and homestays offering comfort, authenticity, and stunning views across Northeast India.</p>
+            <div class="card-features">
+              <span class="card-feat">Verified Properties</span>
+              <span class="card-feat">Best Rates</span>
+              <span class="card-feat">Instant Booking</span>
+            </div>
+            <button class="btn btn-gold" onclick="openBookingModal('room')"><i class="fab fa-whatsapp"></i> Book Room</button>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80" alt="Car Booking">
+          </div>
+          <div class="card-body">
+            <div class="card-icon">🚗</div>
+            <h3 class="card-title">Car Booking</h3>
+            <p class="card-desc">Well-maintained vehicles with experienced drivers for safe and comfortable journeys through mountain terrains.</p>
+            <div class="card-features">
+              <span class="card-feat">Multiple Options</span>
+              <span class="card-feat">Professional Drivers</span>
+              <span class="card-feat">GPS Enabled</span>
+            </div>
+            <button class="btn btn-gold" onclick="openBookingModal('car')"><i class="fab fa-whatsapp"></i> Book Car</button>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&q=80" alt="Tour Packages">
+            <div class="card-badge">Trending</div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon">🗺️</div>
+            <h3 class="card-title">Tour Packages</h3>
+            <p class="card-desc">Curated itineraries covering the best of Northeast India - from Kaziranga to Tawang, Shillong to Gangtok.</p>
+            <div class="card-features">
+              <span class="card-feat">All-Inclusive</span>
+              <span class="card-feat">Customizable</span>
+              <span class="card-feat">Expert Guides</span>
+            </div>
+            <button class="btn btn-gold" onclick="openBookingModal('tour')"><i class="fab fa-whatsapp"></i> Book Package</button>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&q=80" alt="Corporate Rental">
+          </div>
+          <div class="card-body">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">Corporate Car Rental</h3>
+            <p class="card-desc">Premium fleet for business travel, corporate events, and client transportation with professional chauffeurs.</p>
+            <div class="card-features">
+              <span class="card-feat">Premium Fleet</span>
+              <span class="card-feat">Flexible Plans</span>
+              <span class="card-feat">24/7 Support</span>
+            </div>
+            <button class="btn btn-gold" onclick="openBookingModal('corporate')"><i class="fab fa-whatsapp"></i> Book Corporate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">🏔️</div>
+            <div class="logo-text">7 Sisters <span>Tour</span></div>
+          </div>
+          <p class="footer-desc">Your trusted partner for exploring the magnificent Seven Sisters of Northeast India.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Room Booking</a></li>
+            <li><a href="services.html">Car Rental</a></li>
+            <li><a href="services.html">Tour Packages</a></li>
+            <li><a href="services.html">Corporate Rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 7sistersTour.com | All rights reserved.</p>
+        <p>Made with ❤️ for travelers</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="modalTitle">Book Your Service</h3>
+          <p class="modal-sub">Fill details to continue on WhatsApp</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeBookingModal()">✕</button>
+      </div>
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="bookName" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="bookPhone" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Address *</label>
+          <input type="text" id="bookAddress" required>
+        </div>
+        <div class="form-group" id="travelersGroup">
+          <label>Travelers Type *</label>
+          <div class="travelers-grid">
+            <div class="traveler-opt" data-type="kids"><span class="t-icon">👶</span><span class="t-label">Kids</span></div>
+            <div class="traveler-opt" data-type="adults"><span class="t-icon">👤</span><span class="t-label">Adults</span></div>
+            <div class="traveler-opt" data-type="couples"><span class="t-icon">💑</span><span class="t-label">Couples</span></div>
+            <div class="traveler-opt" data-type="friends"><span class="t-icon">👥</span><span class="t-label">Friends</span></div>
+            <div class="traveler-opt" data-type="parents"><span class="t-icon">👴</span><span class="t-label">Parents</span></div>
+            <div class="traveler-opt" data-type="family"><span class="t-icon">👨👩👧</span><span class="t-label">Family</span></div>
+          </div>
+        </div>
+        <div class="form-group" id="vehicleGroup">
+          <label>Vehicle Type *</label>
+          <div class="vehicle-grid">
+            <div class="vehicle-opt" data-vehicle="ertiga">Ertiga</div>
+            <div class="vehicle-opt" data-vehicle="innova">Innova</div>
+            <div class="vehicle-opt" data-vehicle="dzire">Swift Dzire</div>
+            <div class="vehicle-opt" data-vehicle="traveller">Traveller</div>
+            <div class="vehicle-opt" data-vehicle="thar">Thar</div>
+            <div class="vehicle-opt" data-vehicle="other">Other</div>
+          </div>
+        </div>
+        <div class="form-group" id="corporateFields" style="display:none;">
+          <label>Company Name *</label>
+          <input type="text" id="companyName">
+        </div>
+        <div class="form-group">
+          <label>Travel Dates</label>
+          <input type="text" id="travelDates" placeholder="e.g., 15-20 Dec 2024">
+        </div>
+        <div class="form-group">
+          <div class="insurance-toggle" id="insuranceToggle">
+            <div class="toggle-switch"><div class="toggle-knob"></div></div>
+            <div class="toggle-label">Add Travel Insurance (Recommended)</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-wa form-submit"><i class="fab fa-whatsapp"></i> Continue on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="https://wa.me/916000785570?text=Hi%2C%20I%20want%20to%20book%20a%20tour" class="wa-float" target="_blank">
+    <div class="wa-float-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>

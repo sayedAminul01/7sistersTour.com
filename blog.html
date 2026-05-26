@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel stories, guides, and tips from Northeast India — 7 Sisters Tours Blog. Discover Meghalaya, Assam, Nagaland and beyond." />
+  <title>Travel Blog — 7 Sisters Tour</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-hero {
+      background: linear-gradient(135deg, var(--forest) 0%, var(--charcoal) 100%);
+      padding: calc(var(--nav-h) + 64px) 0 64px;
+      text-align: center;
+    }
+    .blog-hero h1 { font-family: var(--font-display); font-size: clamp(2.2rem,6vw,3.5rem); font-weight:900; color:#fff; margin-bottom:12px; }
+    .blog-hero p { color: rgba(255,255,255,0.7); font-size:1.05rem; max-width:560px; margin:0 auto 28px; line-height:1.75; }
+    .blog-search { display:flex; max-width:440px; margin:0 auto; gap:0; }
+    .blog-search input { flex:1; padding:14px 20px; border-radius: var(--radius-xl) 0 0 var(--radius-xl); border:none; background:rgba(255,255,255,0.12); color:#fff; font-size:0.9rem; outline:none; border:1.5px solid rgba(255,255,255,0.2); border-right:none; }
+    .blog-search input::placeholder { color:rgba(255,255,255,0.5); }
+    .blog-search button { padding:14px 24px; background:var(--gold); color:#fff; border-radius: 0 var(--radius-xl) var(--radius-xl) 0; font-weight:600; font-size:0.9rem; transition: background 0.3s; }
+    .blog-search button:hover { background:var(--gold-dark); }
+
+    .blog-main { padding: 80px 0; background: var(--bg); }
+    .blog-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; }
+
+    .featured-post { margin-bottom: 48px; }
+    .featured-card {
+      border-radius: var(--radius-lg); overflow: hidden;
+      background: var(--bg-card); border: 1px solid var(--border);
+      box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; min-height: 340px;
+    }
+    .featured-img { overflow:hidden; }
+    .featured-img img { width:100%; height:100%; object-fit:cover; transition: transform 0.6s; }
+    .featured-card:hover .featured-img img { transform:scale(1.05); }
+    .featured-body { padding: 36px; display:flex; flex-direction:column; justify-content:center; }
+    .featured-tag { display:inline-block; background:var(--gold); color:#fff; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding:4px 12px; border-radius:100px; margin-bottom:16px; }
+    .featured-title { font-family:var(--font-display); font-size:1.7rem; font-weight:700; color:var(--text); line-height:1.3; margin-bottom:12px; }
+    .featured-desc { font-size:0.9rem; color:var(--text-sub); line-height:1.7; margin-bottom:20px; }
+
+    .post-section-title { font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--text); margin-bottom:24px; border-bottom:2px solid var(--border); padding-bottom:12px; }
+
+    .sidebar { display:flex; flex-direction:column; gap:32px; }
+    .sidebar-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:24px; box-shadow:var(--shadow-sm); }
+    .sidebar-card h3 { font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--text); margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid var(--gold); display:inline-block; }
+    .sidebar-tags { display:flex; flex-wrap:wrap; gap:8px; }
+    .sidebar-tag { padding:6px 14px; border-radius:100px; border:1.5px solid var(--border); font-size:0.82rem; font-weight:600; color:var(--text-sub); cursor:pointer; transition:all 0.25s; }
+    .sidebar-tag:hover { border-color:var(--gold); color:var(--gold); }
+    .recent-post { display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--border); }
+    .recent-post:last-child { border-bottom:none; }
+    .recent-thumb { width:60px; height:50px; border-radius:var(--radius-sm); overflow:hidden; flex-shrink:0; }
+    .recent-thumb img { width:100%; height:100%; object-fit:cover; }
+    .recent-title { font-size:0.84rem; font-weight:600; color:var(--text); line-height:1.35; }
+    .recent-date { font-size:0.75rem; color:var(--text-sub); margin-top:4px; }
+
+    .video-section { padding:64px 0; background:var(--bg-section); }
+
+    @media(max-width:900px) {
+      .blog-layout { grid-template-columns:1fr; }
+      .featured-card { grid-template-columns:1fr; }
+      .featured-img { height:220px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">🏔️</div>
+      <div class="logo-text">7SistersTour.com</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#services">Services</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="../index.html#about-strip">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="btn btn-gold nav-cta" onclick="window.location.href='../index.html#services'">Book Now</button>
+      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div id="mobileMenu" class="mobile-menu">
+  <a href="../index.html">🏠 Home</a>
+  <a href="../index.html#services">🧳 Services</a>
+  <a href="blog.html">📝 Blog</a>
+  <a href="../index.html#contact">📞 Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="badge" style="margin:0 auto 16px;">Travel Stories & Guides</div>
+    <h1>The 7 Sisters <span style="color:var(--gold)">Travel Blog</span></h1>
+    <p>Insider guides, personal stories, and everything you need to know before your Northeast India adventure.</p>
+    <div class="blog-search">
+      <input type="text" placeholder="Search destinations, tips, stories..." />
+      <button>Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN BLOG -->
+<section class="blog-main">
+  <div class="container">
+    <div class="blog-layout">
+      <main>
+        <!-- Featured Post -->
+        <div class="featured-post reveal">
+          <div class="badge">✦ Featured Story</div>
+          <div class="featured-card">
+            <div class="featured-img">
+              <img src="./images/gallary/1.jpeg" alt="Living Root Bridges" />
+            </div>
+            <div class="featured-body">
+              <span class="featured-tag">Meghalaya</span>
+              <h2 class="featured-title">The Living Root Bridges: Meghalaya's Ancient Engineering Marvel</h2>
+              <p class="featured-desc">The Khasi people of Meghalaya have been training rubber fig tree roots across streams for centuries — creating living, breathing bridges that grow stronger every year.</p>
+              <div class="blog-meta" style="margin-bottom:16px;">
+                <span>📅 December 2024</span>
+                <span>⏱️ 10 min read</span>
+                <span>👤 Team 7ST</span>
+              </div>
+              <a href="#" class="btn btn-gold">Read Full Article →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Posts -->
+        <h2 class="post-section-title">Latest Posts</h2>
+        <div class="blog-grid" style="margin-bottom:48px;">
+          <article class="blog-card reveal">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&auto=format&fit=crop&q=80" alt="Kaziranga" loading="lazy"/>
+              <span class="blog-cat">Assam</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta"><span>📅 Nov 2024</span><span>⏱️ 6 min</span></div>
+              <h3 class="blog-card-title">Ultimate Kaziranga Safari Guide: Everything You Must Know</h3>
+              <p class="blog-card-desc">When to go, which zones to pick, elephant vs jeep safari, and tips for spotting the one-horned rhino.</p>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-1">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=80" alt="Dzukou Valley" loading="lazy"/>
+              <span class="blog-cat">Nagaland</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta"><span>📅 Oct 2024</span><span>⏱️ 7 min</span></div>
+              <h3 class="blog-card-title">Trekking Dzukou Valley: A Complete Hiker's Guide</h3>
+              <p class="blog-card-desc">Seasonal wildflowers, camping spots, permits, and the most breathtaking ridge walk in Northeast India.</p>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=80" alt="Tawang" loading="lazy"/>
+              <span class="blog-cat">Arunachal</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta"><span>📅 Sep 2024</span><span>⏱️ 8 min</span></div>
+              <h3 class="blog-card-title">Tawang Monastery & Sela Pass: A Spiritual Himalayan Journey</h3>
+              <p class="blog-card-desc">The world's second-largest Buddhist monastery, high-altitude passes, and the unique culture of the Monpa tribe.</p>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-1">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&auto=format&fit=crop&q=80" alt="Loktak Lake" loading="lazy"/>
+              <span class="blog-cat">Manipur</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta"><span>📅 Aug 2024</span><span>⏱️ 5 min</span></div>
+              <h3 class="blog-card-title">Loktak Lake: The Floating World of Manipur</h3>
+              <p class="blog-card-desc">Phumdis, floating islands, the elusive Sangai deer, and the serene sunrise over India's largest freshwater lake.</p>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-card reveal">
+          <h3>Browse By Destination</h3>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Meghalaya</span>
+            <span class="sidebar-tag">Assam</span>
+            <span class="sidebar-tag">Arunachal</span>
+            <span class="sidebar-tag">Nagaland</span>
+            <span class="sidebar-tag">Manipur</span>
+            <span class="sidebar-tag">Tripura</span>
+            <span class="sidebar-tag">Mizoram</span>
+            <span class="sidebar-tag">Wildlife</span>
+            <span class="sidebar-tag">Trekking</span>
+            <span class="sidebar-tag">Culture</span>
+            <span class="sidebar-tag">Photography</span>
+            <span class="sidebar-tag">Food</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card reveal reveal-delay-1">
+          <h3>Recent Posts</h3>
+          <div class="recent-post">
+            <div class="recent-thumb"><img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?w=120&auto=format&fit=crop&q=70" alt="Root Bridges" loading="lazy"/></div>
+            <div><div class="recent-title">Living Root Bridges of Meghalaya</div><div class="recent-date">📅 Dec 2024</div></div>
+          </div>
+          <div class="recent-post">
+            <div class="recent-thumb"><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=120&auto=format&fit=crop&q=70" alt="Kaziranga" loading="lazy"/></div>
+            <div><div class="recent-title">Kaziranga Safari Guide</div><div class="recent-date">📅 Nov 2024</div></div>
+          </div>
+          <div class="recent-post">
+            <div class="recent-thumb"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=120&auto=format&fit=crop&q=70" alt="Tawang" loading="lazy"/></div>
+            <div><div class="recent-title">Tawang Monastery Guide</div><div class="recent-date">📅 Sep 2024</div></div>
+          </div>
+        </div>
+
+        <div class="sidebar-card reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--forest),var(--forest-mid)); border-color:transparent;">
+          <h3 style="color:#fff; border-color:var(--gold);">Ready to Explore?</h3>
+          <p style="color:rgba(255,255,255,0.75); font-size:0.88rem; line-height:1.7; margin-bottom:16px;">Let us plan your perfect Northeast India trip. No cookie-cutter tours — just handcrafted experiences.</p>
+          <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="window.location.href='../index.html#contact'">Plan My Trip 🗺️</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="video-section">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:40px;">
+      <div class="badge">Watch & Wander</div>
+      <h2 class="section-title">Travel Videos from <span>Northeast India</span></h2>
+    </div>
+    <div class="video-grid reveal">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Meghalaya Travel Guide Video" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info"><div class="video-title">🌿 Meghalaya in 7 Days — Complete Travel Guide</div></div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Kaziranga Jeep Safari Video" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info"><div class="video-title">🦏 Kaziranga Jeep Safari — One Horn Rhino Encounter</div></div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Arunachal Pradesh Travel Vlog" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info"><div class="video-title">🏔️ Arunachal Pradesh Road Trip — Hidden Frontier</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border:none; padding:32px 0 0;">
+      <span>© 2025 <a href="../index.html">7 Sisters Tours</a>. All rights reserved.</span>
+      <span>Made with ❤️ in Northeast India</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917002000000" class="wa-float" target="_blank" aria-label="WhatsApp">💬<div class="wa-float-pulse"></div></a>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html> 
