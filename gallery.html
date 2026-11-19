@@ -1,402 +1,212 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore stunning images and videos from Northeast India travel experiences."
-    />
-    <title>Gallery - 7 Sisters Tour</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <nav id="navbar">
-      <div class="container">
-        <div class="nav-inner">
-          <a href="index.html" class="nav-logo">
-            <div class="logo-icon">🏔️</div>
-            <div class="logo-text">7SistersTour.com</div>
-          </a>
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html" class="active">Gallery</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle">
-              <i class="fas fa-moon"></i>
-            </button>
-            <a href="contact.html" class="btn btn-gold nav-cta">Book Now</a>
-            <button class="menu-toggle" id="menuToggle">
-              <span></span><span></span><span></span>
-            </button>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery — Real Northeast India Trips | 7 Sisters Tour</title>
+  <meta name="description" content="Browse real traveler photos from Meghalaya, Cherrapunji, Dawki, Mawlynnong, Kaziranga, Guwahati Airport &amp; snowy Tawang Sela Pass tours by 7 Sisters Tour.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://7sisterstour.com/gallery.html">
+  <link rel="icon" type="image/png" href="./7sisterstour%20com.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./7sisterstour%20com.png" alt="7SistersTour.com Logo" width="54" height="36">
+        <div class="logo-wordmark">
+          <span class="logo-title">7Sisters<span>Tour.com</span></span>
+          <span class="logo-tagline">Northeast India Experts</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-trigger">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="services.html#svc-room" class="nav-dropdown-item"><i class="fas fa-bed"></i> Room Booking</a>
+            <a href="services.html#svc-car" class="nav-dropdown-item"><i class="fas fa-car"></i> Car Booking</a>
+            <a href="services.html#svc-tour" class="nav-dropdown-item"><i class="fas fa-map-marked-alt"></i> Tour Packages</a>
+            <a href="services.html#svc-corporate" class="nav-dropdown-item"><i class="fas fa-briefcase"></i> Corporate Rental</a>
+            <a href="services.html#svc-couple" class="nav-dropdown-item"><i class="fas fa-heart"></i> Couple Trip</a>
+            <a href="services.html#svc-group" class="nav-dropdown-item"><i class="fas fa-users"></i> Group Trip</a>
+            <a href="services.html#svc-solo" class="nav-dropdown-item"><i class="fas fa-hiking"></i> Solo Trip</a>
+            <a href="services.html#svc-mizoram" class="nav-dropdown-item"><i class="fas fa-mountain"></i> Mizoram Trip</a>
           </div>
         </div>
-      </div>
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="index.html#tour-packages">Packages</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="index.html#map-section">Map</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn btn-gold mobile-cta">Book Now</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour%2C%20I%20loved%20your%20gallery%20photos%20and%20want%20to%20plan%20a%20trip." target="_blank" rel="noopener" class="btn btn-wa nav-wa-btn"><i class="fab fa-whatsapp"></i> Contact Us</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
-    </nav>
-
-    <section style="padding: 140px 0 96px; background: var(--bg-section)">
-      <div class="container">
-        <div class="reveal">
-          <span class="badge">Gallery</span>
-          <h1 class="section-title">Visual <span>Journey</span></h1>
-          <p class="section-sub">
-            Immerse yourself in the breathtaking beauty of Northeast India
-            through our curated collection of images and videos.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section-pad">
-      <div class="container">
-        <div class="gallery-tabs reveal">
-          <button class="gallery-tab active" data-tab="images">
-            📷 Images
-          </button>
-          <button class="gallery-tab" data-tab="videos">🎥 Videos</button>
-        </div>
-
-        <div class="gallery-panel active" id="images">
-          <div class="gallery-grid reveal">
-            <div class="gallery-item">
-              <img src="./images/1.jpeg" alt="Mountain View" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/2.jpeg" alt="Landscape" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Guwahati Airport</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/3.jpeg" alt="Travel" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/4.jpeg" alt="Travel" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label"
-                  >Mini Switzerland Shillong</span
-                >
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/5.jpeg" alt="Travel" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/6.jpeg" alt="Nature" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/7.jpeg" alt="Sunset" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="./images/8.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Shillong</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/9.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Shillong</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/10.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Guwahati Airport</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/11.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Kaziranga</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/13.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Dawki Bangladesh Border</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/14.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Cherrapunji</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/15.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Shillong</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/16.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Dawki Bangladesh Border</span>
-              </div>
-            </div>
-
-            <div class="gallery-item">
-              <img src="./images/17.jpeg" alt="Peaks" />
-              <div class="gallery-item-overlay">
-                <span class="gallery-item-label">Mawly Long</span>
-              </div>
-            </div>
-
-
-                      <div class="gallery-item">
-            <img src="./images/18.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Mawly Long</span>
-            </div>
-          </div>
-
-                      <div class="gallery-item">
-            <img src="./images/19.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Cherrapunji</span>
-            </div>
-          </div>
-
-                      <div class="gallery-item">
-            <img src="./images/20.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-
-                      <div class="gallery-item">
-            <img src="./images/21.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-                      <div class="gallery-item">
-            <img src="./images/22.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-          
-                      <div class="gallery-item">
-            <img src="./images/23.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-                                <div class="gallery-item">
-            <img src="./images/24.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-          
-                                <div class="gallery-item">
-            <img src="./images/25.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-                                         <div class="gallery-item">
-            <img src="./images/26.jpeg" alt="Peaks">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Tawang</span>
-            </div>
-          </div>
-
-          
-
-
-          </div>
-        </div>
-
-        <div class="gallery-panel" id="videos">
-          <div class="video-grid reveal">
-            <div class="video-card">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">
-                  Exploring Meghalaya - Living Root Bridges
-                </div>
-              </div>
-            </div>
-            <div class="video-card">
-              <iframe
-                <!-- src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">Kaziranga National Park Safari</div>
-              </div>
-            </div>
-            <div class="video-card">
-              <iframe
-                <!-- src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">
-                  Tawang Monastery - Spiritual Journey
-                </div>
-              </div>
-            </div>
-            <div class="video-card">
-              <iframe
-                <!-- src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">Shillong - Scotland of the East</div>
-              </div>
-            </div>
-            <div class="video-card">
-              <iframe
-                <!-- src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">Gangtok City Tour & MG Marg</div>
-              </div>
-            </div>
-            <div class="video-card">
-              <iframe
-                <!-- src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
-                allowfullscreen
-              ></iframe>
-              <div class="video-info">
-                <div class="video-title">
-                  Majuli Island - World's Largest River Island
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="lightbox" id="lightbox">
-      <span class="lightbox-close">✕</span>
-      <img src="" alt="Lightbox" class="lightbox-img" id="lightboxImg" />
     </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-nav-list">
+        <a href="index.html">Home</a>
+        <a href="services.html">All Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="mobile-cta-row">
+        <a href="tel:+916000785570" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/916000785570" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </header>
 
-    <footer>
+  <main>
+    <section class="page-hero">
       <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="nav-logo">
-              <div class="logo-icon">🏔️</div>
-              <div class="logo-text">7 Sisters <span>Tours</span></div>
-            </div>
-            <p class="footer-desc">
-              Your trusted partner for exploring the magnificent Seven Sisters
-              of Northeast India.
-            </p>
-            <div class="footer-socials">
-              <a href="#" class="social-btn"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
-            </div>
+        <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Photo Gallery</span></nav>
+        <h1>Real Traveler <span>Photo Gallery</span></h1>
+        <p>Unfiltered snapshots from our Meghalaya, Tawang, Kaziranga, Dawki &amp; Guwahati Airport trips. Tap any image for full-screen view.</p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head-row reveal">
+          <div class="filter-pills">
+            <button class="filter-pill gal-filter-btn active" data-filter="all">All Photos (28)</button>
+            <button class="filter-pill gal-filter-btn" data-filter="meghalaya">Meghalaya</button>
+            <button class="filter-pill gal-filter-btn" data-filter="tawang">Tawang &amp; Sela</button>
+            <button class="filter-pill gal-filter-btn" data-filter="assam">Assam &amp; Safari</button>
+            <button class="filter-pill gal-filter-btn" data-filter="guests">Happy Guests</button>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="services.html">Room Booking</a></li>
-              <li><a href="services.html">Car Rental</a></li>
-              <li><a href="services.html">Tour Packages</a></li>
-              <li><a href="services.html">Corporate Rental</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
+          <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour%2C%20please%20share%20recent%20trip%20reels%20and%20packages." target="_blank" rel="noopener" class="btn btn-wa btn-sm">
+            <i class="fab fa-whatsapp"></i> Plan Your Trip
+          </a>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 7 Sisters Tour. All rights reserved.</p>
-          <p>Made with ❤️ for travelers</p>
+
+        <div class="gallery-grid reveal">
+          <figure class="gallery-item" data-category="meghalaya" data-caption="Cherrapunji Natural Limestone Cave"><img src="./images/1.jpeg" alt="Cherrapunji cave skylight Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Cherrapunji Caves<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="assam guests" data-caption="Guwahati Airport Traditional Gamosa Welcome"><img src="./images/2.jpeg" class="img-top" alt="Travelers welcomed with Assamese Gamosa at Guwahati Airport" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Guwahati Airport Welcome<small>Assam</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Misty Cherrapunji Valley Viewpoint"><img src="./images/3.jpeg" class="img-top" alt="Family group at Cherrapunji misty valley Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Cherrapunji Valley<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya" data-caption="Mini Switzerland Lake View — Shillong"><img src="./images/4.jpeg" alt="Lush green lake and pine forest near Shillong Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Mini Switzerland Shillong<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Nohkalikai Canyon Overlook — Cherrapunji"><img src="./images/5.jpeg" class="img-top" alt="Family posing at Cherrapunji canyon overlook Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Cherrapunji Overlook<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Seven Sisters Falls Viewpoint — Sohra"><img src="./images/6.jpeg" class="img-top" alt="Travelers admiring waterfalls in Cherrapunji Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Sohra Falls View<small>Cherrapunji</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Solo River Bridge Stop — Meghalaya"><img src="./images/7.jpeg" class="img-top" alt="Solo traveler at red arch bridge over green river Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Emerald River Bridge<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Umiam Lake Group Photo — Shillong"><img src="./images/8.jpeg" class="img-top" alt="Big family group at Umiam Lake viewpoint Shillong" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Umiam Lake Group<small>Shillong</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Friends Group Outing — Shillong Hills"><img src="./images/9.jpeg" class="img-top" alt="Friends enjoying green Meghalaya hills on group trip" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Friends Hill Trip<small>Shillong</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="assam guests" data-caption="Family Welcome with Gamosa — Guwahati Airport"><img src="./images/10.jpeg" class="img-top" alt="Family greeted with Assamese Gamosa at Guwahati Airport" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Family Airport Welcome<small>Guwahati</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="assam guests" data-caption="Open Gypsy Wildlife Safari — Assam"><img src="./images/11.jpeg" class="img-top" alt="Family enjoying Pobitora Kaziranga wildlife jeep safari Assam" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Wildlife Jeep Safari<small>Assam</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="assam guests" data-caption="Jungle Safari Trail — Assam"><img src="./images/12.jpeg" class="img-top" alt="Safari vehicle inside lush Assam wildlife sanctuary" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Sanctuary Jungle Trail<small>Assam</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Dawki India–Bangladesh Border"><img src="./images/13.jpeg" class="img-top" alt="Family visiting Dawki Tamabil India Bangladesh border" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Dawki Border Point<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Nohkalikai Waterfall Viewpoint — Cherrapunji"><img src="./images/14.jpeg" class="img-top" alt="Travelers looking at Nohkalikai Waterfall in Cherrapunji" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Nohkalikai Falls<small>Cherrapunji</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Traditional Khasi Attire — Couple Trip Shillong"><img src="./images/15.jpeg" class="img-top" alt="Couple trying traditional Khasi attire in Shillong" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Traditional Khasi Attire<small>Shillong Couple Trip</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Group Visit to Dawki Border"><img src="./images/16.jpeg" class="img-top" alt="Extended family group at Dawki border Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Dawki Border Group<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Living Root Bridge Stream — Mawlynnong"><img src="./images/17.jpeg" class="img-top" alt="Kids standing in front of Living Root Bridge Mawlynnong" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Mawlynnong Root Bridge<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya" data-caption="Single-Decker Living Root Bridge — Riwai"><img src="./images/18.jpeg" alt="Scenic Living Root Bridge spanning clear forest river in Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Living Root Bridge<small>Mawlynnong</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Youth Group Trip — Cherrapunji Ridge"><img src="./images/19.jpeg" class="img-top" alt="Young friends group on scenic ridge in Cherrapunji" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Cherrapunji Group Trip<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang guests" data-caption="Couple at Nuranang Waterfall — Tawang"><img src="./images/20.jpeg" class="img-top" alt="Couple in front of Nuranang Jang Falls in Tawang" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Nuranang Falls Couple<small>Tawang</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang" data-caption="Giant Buddha Statue — Tawang"><img src="./images/21.jpeg" class="img-top" alt="Giant golden Buddha statue in misty Tawang Arunachal Pradesh" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Tawang Buddha Statue<small>Arunachal Pradesh</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang guests" data-caption="High-Altitude Snow Wall — Sela Pass"><img src="./images/22.jpeg" class="img-top" alt="Traveler sitting amidst fresh snow walls at Sela Pass Tawang" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Sela Pass Snow Wall<small>Tawang</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang guests" data-caption="Bum La Pass (15,200 ft) — Indo-China Border"><img src="./images/23.jpeg" class="img-top" alt="Bum La Pass 15200 ft snow marker Tawang" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Bum La Pass 15,200 ft<small>Tawang</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang guests" data-caption="Pine Forest Snowfall — Tawang Winter Tour"><img src="./images/24.jpeg" class="img-top" alt="Couple enjoying fresh snow along Tawang pine trail" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Tawang Pine Snowfall<small>Arunachal</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang" data-caption="Our Mountain-Ready Ertiga at Sela Pass"><img src="./images/25.jpeg" alt="7 Sisters Tour white Ertiga parked on snowy Sela Pass road" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Our Fleet at Sela Pass<small>Tawang Car Rental</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="tawang guests" data-caption="I Love Sela Pass — Tawang Road Trip"><img src="./images/26.jpeg" class="img-top" alt="I Love Sela sign with snow mountains and prayer flags Tawang" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">I ♥ Sela Pass<small>Tawang</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Turquoise Waterfall Pool — Jaintia Hills"><img src="./images/sahil.jpeg" class="img-top" alt="Traveler enjoying crystal blue waterfall pool in Meghalaya" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Jaintia Hills Waterfall<small>Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+          <figure class="gallery-item" data-category="meghalaya guests" data-caption="Chai in the Clouds — Misty Meghalaya Hills"><img src="./images/WhatsApp%20Image%202026-05-26%20at%2001.23.47.jpeg" class="img-top" alt="Friends enjoying hot tea in foggy Meghalaya hills" loading="lazy"><figcaption class="gallery-overlay"><div class="gallery-caption">Chai in the Clouds<small>Group Trip Meghalaya</small></div><span class="gallery-zoom"><i class="fas fa-expand"></i></span></figcaption></figure>
+        </div>
+
+        <div class="section-foot-cta" style="margin-top:28px;">
+          <a href="https://www.facebook.com/profile.php?id=61590529616214" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-right:8px;">
+            <i class="fab fa-facebook-f"></i> Watch Trip Reels on Facebook
+          </a>
+          <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour%2C%20I%20want%20to%20plan%20a%20similar%20Northeast%20trip!" target="_blank" rel="noopener" class="btn btn-wa btn-sm">
+            <i class="fab fa-whatsapp"></i> Book Your Own Adventure
+          </a>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <a
-      href="https://wa.me/916000785570?text=Hi%2C%20I%20want%20to%20book%20a%20tour"
-      class="wa-float"
-      target="_blank"
-    >
-      <div class="wa-float-pulse"></div>
-      <i class="fab fa-whatsapp"></i>
-    </a>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-stage">
+      <img src="" alt="Gallery preview" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+  </div>
 
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="./7sisterstour%20com.png" alt="7SistersTour.com" width="52" height="38"><span>7SistersTour.com</span></div>
+          <p class="footer-desc">Authentic Northeast India tour packages, rooms, cabs &amp; Couple/Group/Solo/Mizoram trips from Guwahati.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61590529616214" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/916000785570" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:info@7sisterstour.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>All Services</h4>
+          <ul>
+            <li><a href="services.html#svc-room">Room Booking</a></li>
+            <li><a href="services.html#svc-car">Car Booking</a></li>
+            <li><a href="services.html#svc-tour">Tour Packages</a></li>
+            <li><a href="services.html#svc-corporate">Corporate Rental</a></li>
+            <li><a href="services.html#svc-couple">Couple Trip</a></li>
+            <li><a href="services.html#svc-group">Group Trip</a></li>
+            <li><a href="services.html#svc-solo">Solo Trip</a></li>
+            <li><a href="services.html#svc-mizoram">Mizoram Trip</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact &amp; Booking</h4>
+          <div class="footer-contact-list">
+            <a href="tel:+916000785570" class="footer-contact-item"><i class="fas fa-phone-alt"></i> +91 6000 785570</a>
+            <a href="mailto:info@7sisterstour.com" class="footer-contact-item"><i class="fas fa-envelope"></i> info@7sisterstour.com</a>
+            <span class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Guwahati, Assam</span>
+          </div>
+          <a href="https://wa.me/916000785570" target="_blank" rel="noopener" class="btn btn-wa btn-sm" style="width:100%;"><i class="fab fa-whatsapp"></i> WhatsApp Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 7SistersTour.com — All Rights Reserved.</span>
+        <span>Real Photos • Real Travelers</span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <a href="https://wa.me/916000785570" class="wa-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span>WhatsApp Us</span></a>
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div class="mobile-sticky-bar">
+    <a href="tel:+916000785570" class="btn btn-outline btn-sm"><i class="fas fa-phone-alt"></i> Call Us</a>
+    <a href="https://wa.me/916000785570" target="_blank" rel="noopener" class="btn btn-wa btn-sm"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
