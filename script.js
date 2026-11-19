@@ -1,6 +1,6 @@
 /* ===== 7SISTERSTOUR.COM — OPTIMIZED INTERACTIVE SCRIPT ===== */
 
-const WA_NUMBER = '916000785570';
+const WA_NUMBER = '918133075755';
 
 function openWhatsApp(message) {
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
