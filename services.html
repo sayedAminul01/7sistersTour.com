@@ -1,256 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore our comprehensive travel services - room booking, car rental, tour packages, and corporate solutions.">
-  <title>Our Services - 7 Sisters Tour</title>
+  <title>Travel Services | Couple, Group, Solo, Mizoram Trips &amp; Cabs — 7 Sisters Tour</title>
+  <meta name="description" content="Explore all 8 Northeast India travel services by 7 Sisters Tour: Room Booking, Car Booking, Tour Packages, Corporate Rental, Couple Trip, Group Trip, Solo Trip &amp; Mizoram Trip.">
+  <meta name="keywords" content="couple trip northeast india, group trip meghalaya, solo trip northeast india, mizoram trip package, guwahati car rental, shillong room booking, corporate car rental guwahati">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://7sisterstour.com/services.html">
+  <link rel="icon" type="image/png" href="./7sisterstour%20com.png">
+  <meta property="og:title" content="All Northeast India Travel Services — 7 Sisters Tour">
+  <meta property="og:description" content="Book Room Booking, Car Booking, Tour Packages, Corporate Rental, Couple Trip, Group Trip, Solo Trip &amp; Mizoram Trip via WhatsApp.">
+  <meta property="og:image" content="https://7sisterstour.com/images/dawki.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://7sisterstour.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://7sisterstour.com/services.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <nav id="navbar">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          <div class="logo-icon">🏔️</div>
-          <div class="logo-text">7SistersTour.com <span></span></div>
-        </a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="services.html" class="active">Services</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./7sisterstour%20com.png" alt="7SistersTour.com Logo" width="54" height="36">
+        <div class="logo-wordmark">
+          <span class="logo-title">7Sisters<span>Tour.com</span></span>
+          <span class="logo-tagline">Northeast India Experts</span>
         </div>
-        <div class="nav-actions">
-          <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
-          <a href="contact.html" class="btn btn-gold nav-cta">Book Now</a>
-          <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-trigger active">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="#svc-room" class="nav-dropdown-item"><i class="fas fa-bed"></i> Room Booking</a>
+            <a href="#svc-car" class="nav-dropdown-item"><i class="fas fa-car"></i> Car Booking</a>
+            <a href="#svc-tour" class="nav-dropdown-item"><i class="fas fa-map-marked-alt"></i> Tour Packages</a>
+            <a href="#svc-corporate" class="nav-dropdown-item"><i class="fas fa-briefcase"></i> Corporate Rental</a>
+            <a href="#svc-couple" class="nav-dropdown-item"><i class="fas fa-heart"></i> Couple Trip</a>
+            <a href="#svc-group" class="nav-dropdown-item"><i class="fas fa-users"></i> Group Trip</a>
+            <a href="#svc-solo" class="nav-dropdown-item"><i class="fas fa-hiking"></i> Solo Trip</a>
+            <a href="#svc-mizoram" class="nav-dropdown-item"><i class="fas fa-mountain"></i> Mizoram Trip</a>
+          </div>
         </div>
+        <a href="index.html#tour-packages">Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#map-section">Map</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour%2C%20I%20want%20to%20book%20a%20travel%20service." target="_blank" rel="noopener" class="btn btn-wa nav-wa-btn"><i class="fab fa-whatsapp"></i> Contact Us</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-gold mobile-cta">Book Now</a>
-    </div>
-  </nav>
-
-  <section style="padding: 140px 0 96px; background: var(--bg-section);">
-    <div class="container">
-      <div class="reveal">
-        <span class="badge">Our Services</span>
-        <h1 class="section-title">Complete Travel <span>Solutions</span></h1>
-        <p class="section-sub">Everything you need for a perfect Northeast India journey - from comfortable stays to reliable transportation and expertly crafted tour packages.</p>
+      <div class="mobile-nav-list">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">All Services</a>
+        <a href="index.html#tour-packages">Tour Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#map-section">Route Map</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="mobile-cta-row">
+        <a href="tel:+916000785570" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour!" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section-pad" style="background: var(--bg);">
-    <div class="container">
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Room Booking">
-            <div class="card-badge">Popular</div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <span>Services</span>
+        </nav>
+        <h1>Complete Northeast India <span>Travel Services</span></h1>
+        <p>Choose from 8 tailored travel services — stays, airport cabs, custom packages, Couple, Group, Solo &amp; Mizoram trips. Book directly via WhatsApp in seconds.</p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head-row reveal">
+          <div>
+            <span class="eyebrow"><i class="fas fa-concierge-bell"></i> Instant WhatsApp Booking</span>
+            <h2 class="section-title">Browse All <span>8 Travel Services</span></h2>
           </div>
-          <div class="card-body">
-            <div class="card-icon">🏨</div>
-            <h3 class="card-title">Room Booking</h3>
-            <p class="card-desc">Handpicked hotels and homestays offering comfort, authenticity, and stunning views across Northeast India.</p>
-            <div class="card-features">
-              <span class="card-feat">Verified Properties</span>
-              <span class="card-feat">Best Rates</span>
-              <span class="card-feat">Instant Booking</span>
-            </div>
-            <button class="btn btn-gold" onclick="openBookingModal('room')"><i class="fab fa-whatsapp"></i> Book Room</button>
+          <div class="filter-pills">
+            <button class="filter-pill svc-filter-btn active" data-filter="all">All Services (8)</button>
+            <button class="filter-pill svc-filter-btn" data-filter="stays">Stays &amp; Cars</button>
+            <button class="filter-pill svc-filter-btn" data-filter="styles">Couple / Group / Solo</button>
+            <button class="filter-pill svc-filter-btn" data-filter="tours">Packages &amp; Mizoram</button>
           </div>
         </div>
 
-        <div class="service-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80" alt="Car Booking">
-          </div>
-          <div class="card-body">
-            <div class="card-icon">🚗</div>
-            <h3 class="card-title">Car Booking</h3>
-            <p class="card-desc">Well-maintained vehicles with experienced drivers for safe and comfortable journeys through mountain terrains.</p>
-            <div class="card-features">
-              <span class="card-feat">Multiple Options</span>
-              <span class="card-feat">Professional Drivers</span>
-              <span class="card-feat">GPS Enabled</span>
+        <div class="services-grid">
+          <article class="service-card reveal" id="svc-room" data-category="stays">
+            <div class="svc-img-wrap">
+              <img src="./images/homestay.jpg" alt="Room Booking in Shillong, Cherrapunji, Guwahati and Tawang" loading="lazy">
+              <span class="svc-badge popular">Popular</span>
             </div>
-            <button class="btn btn-gold" onclick="openBookingModal('car')"><i class="fab fa-whatsapp"></i> Book Car</button>
-          </div>
-        </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-bed"></i></span><h3 class="svc-title">Room Booking</h3></div>
+              <p class="svc-desc">Verified hotels, boutique hillside resorts &amp; authentic homestays across Meghalaya, Assam, Arunachal &amp; Mizoram.</p>
+              <div class="svc-tags"><span class="svc-tag">Verified Stays</span><span class="svc-tag">Best Rates</span><span class="svc-tag">Instant Confirm</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('room')"><i class="fab fa-whatsapp"></i> Book Room</button>
+            </div>
+          </article>
 
-        <div class="service-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&q=80" alt="Tour Packages">
-            <div class="card-badge">Trending</div>
-          </div>
-          <div class="card-body">
-            <div class="card-icon">🗺️</div>
-            <h3 class="card-title">Tour Packages</h3>
-            <p class="card-desc">Curated itineraries covering the best of Northeast India - from Kaziranga to Tawang, Shillong to Gangtok.</p>
-            <div class="card-features">
-              <span class="card-feat">All-Inclusive</span>
-              <span class="card-feat">Customizable</span>
-              <span class="card-feat">Expert Guides</span>
+          <article class="service-card reveal" id="svc-car" data-category="stays">
+            <div class="svc-img-wrap">
+              <img src="./images/25.jpeg" alt="Car Booking and Guwahati Airport Cab Rental" loading="lazy">
+              <span class="svc-badge">Airport Pickup</span>
             </div>
-            <button class="btn btn-gold" onclick="openBookingModal('tour')"><i class="fab fa-whatsapp"></i> Book Package</button>
-          </div>
-        </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-car"></i></span><h3 class="svc-title">Car Booking</h3></div>
+              <p class="svc-desc">Clean Swift Dzire, Ertiga, Innova Crysta &amp; Tempo Travellers with hill-expert local drivers for safe mountain travel.</p>
+              <div class="svc-tags"><span class="svc-tag">Dzire • Innova</span><span class="svc-tag">Local Drivers</span><span class="svc-tag">24/7 Support</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('car')"><i class="fab fa-whatsapp"></i> Book Car</button>
+            </div>
+          </article>
 
-        <div class="service-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&q=80" alt="Corporate Rental">
-          </div>
-          <div class="card-body">
-            <div class="card-icon">💼</div>
-            <h3 class="card-title">Corporate Car Rental</h3>
-            <p class="card-desc">Premium fleet for business travel, corporate events, and client transportation with professional chauffeurs.</p>
-            <div class="card-features">
-              <span class="card-feat">Premium Fleet</span>
-              <span class="card-feat">Flexible Plans</span>
-              <span class="card-feat">24/7 Support</span>
+          <article class="service-card reveal" id="svc-tour" data-category="tours">
+            <div class="svc-img-wrap">
+              <img src="./images/dawki.png" alt="Northeast India Tour Packages" loading="lazy">
+              <span class="svc-badge popular">Trending</span>
             </div>
-            <button class="btn btn-gold" onclick="openBookingModal('corporate')"><i class="fab fa-whatsapp"></i> Book Corporate</button>
-          </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-map-marked-alt"></i></span><h3 class="svc-title">Tour Packages</h3></div>
+              <p class="svc-desc">All-inclusive custom itineraries covering Meghalaya, Kaziranga, Kamakhya, Tawang, Nagaland &amp; Sikkim.</p>
+              <div class="svc-tags"><span class="svc-tag">All-Inclusive</span><span class="svc-tag">100% Custom</span><span class="svc-tag">Zero Hidden Fees</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('tour')"><i class="fab fa-whatsapp"></i> Book Package</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="svc-corporate" data-category="stays">
+            <div class="svc-img-wrap">
+              <img src="./images/h2.png" alt="Corporate Car Rental in Guwahati and Northeast India" loading="lazy">
+              <span class="svc-badge">Business Fleet</span>
+            </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-briefcase"></i></span><h3 class="svc-title">Corporate Car Rental</h3></div>
+              <p class="svc-desc">Executive chauffeur-driven fleet for corporate visits, events, VIP airport transfers &amp; monthly company contracts.</p>
+              <div class="svc-tags"><span class="svc-tag">GST Billing</span><span class="svc-tag">Executive Fleet</span><span class="svc-tag">Flexible Plans</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('corporate')"><i class="fab fa-whatsapp"></i> Book Corporate</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="svc-couple" data-category="styles">
+            <div class="svc-img-wrap">
+              <img src="./images/15.jpeg" class="img-top" alt="Couple Trip and Honeymoon Packages in Shillong, Dawki and Tawang" loading="lazy">
+              <span class="svc-badge new">Honeymoon Pick</span>
+            </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-heart"></i></span><h3 class="svc-title">Couple Trip</h3></div>
+              <p class="svc-desc">Romantic private getaways &amp; honeymoon tours featuring scenic boutique resorts, privacy, sunset viewpoints &amp; private cab.</p>
+              <div class="svc-tags"><span class="svc-tag">Private Cab</span><span class="svc-tag">Boutique Stays</span><span class="svc-tag">Custom Decor</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('couple')"><i class="fab fa-whatsapp"></i> Book Couple Trip</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="svc-group" data-category="styles">
+            <div class="svc-img-wrap">
+              <img src="./images/9.jpeg" class="img-group" alt="Friends smiling together in Meghalaya hills on a Group Trip with 7 Sisters Tour" loading="lazy">
+              <span class="svc-badge new">Best Value</span>
+            </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-users"></i></span><h3 class="svc-title">Group Trip</h3></div>
+              <p class="svc-desc">Curated group tours for friends, college batches &amp; big families with 12–17 seater Tempo Travellers &amp; bulk savings.</p>
+              <div class="svc-tags"><span class="svc-tag">Tempo Traveller</span><span class="svc-tag">Group Discounts</span><span class="svc-tag">Bonfire Nights</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('group')"><i class="fab fa-whatsapp"></i> Book Group Trip</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="svc-solo" data-category="styles">
+            <div class="svc-img-wrap">
+              <img src="./images/7.jpeg" class="img-top" alt="Safe Guided Solo Trip in Northeast India" loading="lazy">
+              <span class="svc-badge new">Safe &amp; Guided</span>
+            </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-hiking"></i></span><h3 class="svc-title">Solo Trip</h3></div>
+              <p class="svc-desc">Flexible, safe &amp; budget-friendly solo travel plans with verified homestays, local route guidance &amp; 24/7 WhatsApp check-ins.</p>
+              <div class="svc-tags"><span class="svc-tag">Safe Verified</span><span class="svc-tag">Budget Friendly</span><span class="svc-tag">Local Guide</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('solo')"><i class="fab fa-whatsapp"></i> Book Solo Trip</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="svc-mizoram" data-category="tours">
+            <div class="svc-img-wrap">
+              <img src="./images/mizoram.jpg" alt="Mizoram Trip covering Aizawl, Reiek Tlang and Vantawng Falls" loading="lazy">
+              <span class="svc-badge new">New Service</span>
+            </div>
+            <div class="svc-body">
+              <div class="svc-head"><span class="svc-icon"><i class="fas fa-mountain"></i></span><h3 class="svc-title">Mizoram Trip</h3></div>
+              <p class="svc-desc">Explore Mizoram’s tranquil blue hills — Aizawl, Reiek Peak, Vantawng Waterfalls &amp; Tam Dil Lake with full ILP assistance.</p>
+              <div class="svc-tags"><span class="svc-tag">ILP Handled</span><span class="svc-tag">Aizawl • Reiek</span><span class="svc-tag">Verified Cab</span></div>
+              <button class="btn btn-wa btn-sm svc-cta" onclick="openBookingModal('mizoram')"><i class="fab fa-whatsapp"></i> Book Mizoram Trip</button>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section-pad bg-soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Ready-Made Packages</span>
+          <h2 class="section-title">Popular Packages — <span>Book by WhatsApp</span></h2>
+          <p class="section-sub">Tap any package below to launch WhatsApp with pre-filled details for instant pricing and itinerary.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card reveal">
+            <div class="package-img">
+              <img src="./images/dawki.png" alt="Meghalaya 4N 5D Tour Package" loading="lazy">
+              <span class="pkg-tag hot">Popular</span>
+              <span class="pkg-duration"><i class="far fa-clock"></i> 4N / 5D</span>
+            </div>
+            <div class="package-body">
+              <h3 class="package-title">Meghalaya Tour Package</h3>
+              <p class="package-desc">Shillong, Cherrapunji, Living Root Bridges, Mawlynnong &amp; Dawki boating.</p>
+              <div class="pkg-price-row">
+                <span class="pkg-price-label">Starting From</span>
+                <span class="pkg-price-val">₹20,000 <small>/person</small></span>
+              </div>
+              <button class="btn btn-wa btn-sm" style="width:100%;" onclick="openPackageBooking('Meghalaya Tour Package', '4 Nights / 5 Days', '20,000')"><i class="fab fa-whatsapp"></i> Book on WhatsApp</button>
+            </div>
+          </article>
+
+          <article class="package-card reveal">
+            <div class="package-img">
+              <img src="./images/jangWater.png" alt="Tawang 6N 7D Tour Package" loading="lazy">
+              <span class="pkg-tag">Himalayan</span>
+              <span class="pkg-duration"><i class="far fa-clock"></i> 6N / 7D</span>
+            </div>
+            <div class="package-body">
+              <h3 class="package-title">Tawang Tour Package</h3>
+              <p class="package-desc">Sela Pass, Tawang Monastery, Nuranang Falls, Dirang &amp; Bum La Pass (ILP Assisted).</p>
+              <div class="pkg-price-row">
+                <span class="pkg-price-label">Starting From</span>
+                <span class="pkg-price-val">₹25,000 <small>/person</small></span>
+              </div>
+              <button class="btn btn-wa btn-sm" style="width:100%;" onclick="openPackageBooking('Tawang Tour Package', '6 Nights / 7 Days', '25,000')"><i class="fab fa-whatsapp"></i> Book on WhatsApp</button>
+            </div>
+          </article>
+
+          <article class="package-card reveal">
+            <div class="package-img">
+              <img src="./images/kamakazi.png" alt="Kamakhya Temple and Kaziranga Tour" loading="lazy">
+              <span class="pkg-tag">Assam Special</span>
+              <span class="pkg-duration"><i class="far fa-clock"></i> 2N / 3D</span>
+            </div>
+            <div class="package-body">
+              <h3 class="package-title">Kamakhya &amp; Kaziranga</h3>
+              <p class="package-desc">Maa Kamakhya Temple darshan &amp; Kaziranga UNESCO one-horned rhino safari.</p>
+              <div class="pkg-price-row">
+                <span class="pkg-price-label">Starting From</span>
+                <span class="pkg-price-val">₹10,000 <small>/person</small></span>
+              </div>
+              <button class="btn btn-wa btn-sm" style="width:100%;" onclick="openPackageBooking('Kamakhya & Kaziranga Package', '2 Nights / 3 Days', '10,000')"><i class="fab fa-whatsapp"></i> Book on WhatsApp</button>
+            </div>
+          </article>
+
+          <article class="package-card reveal">
+            <div class="package-img">
+              <img src="./images/mizoram.jpg" alt="Mizoram 4N 5D Tour Package" loading="lazy">
+              <span class="pkg-tag hot">New</span>
+              <span class="pkg-duration"><i class="far fa-clock"></i> 4N / 5D</span>
+            </div>
+            <div class="package-body">
+              <h3 class="package-title">Mizoram Discovery Tour</h3>
+              <p class="package-desc">Aizawl, Reiek Tlang, Vantawng Falls, Tam Dil Lake &amp; Hmuifang hills (ILP Assisted).</p>
+              <div class="pkg-price-row">
+                <span class="pkg-price-label">Starting From</span>
+                <span class="pkg-price-val">₹18,500 <small>/person</small></span>
+              </div>
+              <button class="btn btn-wa btn-sm" style="width:100%;" onclick="openPackageBooking('Mizoram Discovery Tour Package', '4 Nights / 5 Days', '18,500')"><i class="fab fa-whatsapp"></i> Book on WhatsApp</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="nav-logo">
-            <div class="logo-icon">🏔️</div>
-            <div class="logo-text">7 Sisters <span>Tour</span></div>
-          </div>
-          <p class="footer-desc">Your trusted partner for exploring the magnificent Seven Sisters of Northeast India.</p>
+        <div>
+          <div class="footer-logo"><img src="./7sisterstour%20com.png" alt="7SistersTour.com" width="52" height="38"><span>7SistersTour.com</span></div>
+          <p class="footer-desc">Trusted Guwahati-based Northeast India travel partner for stays, cabs, tour packages, Couple, Group, Solo &amp; Mizoram trips.</p>
           <div class="footer-socials">
-            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61590529616214" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/916000785570" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:info@7sisterstour.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Quick Links</h4>
+          <h4>All Services</h4>
+          <ul>
+            <li><a href="#svc-room">Room Booking</a></li>
+            <li><a href="#svc-car">Car Booking</a></li>
+            <li><a href="#svc-tour">Tour Packages</a></li>
+            <li><a href="#svc-corporate">Corporate Car Rental</a></li>
+            <li><a href="#svc-couple">Couple Trip</a></li>
+            <li><a href="#svc-group">Group Trip</a></li>
+            <li><a href="#svc-solo">Solo Trip</a></li>
+            <li><a href="#svc-mizoram">Mizoram Trip</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Room Booking</a></li>
-            <li><a href="services.html">Car Rental</a></li>
-            <li><a href="services.html">Tour Packages</a></li>
-            <li><a href="services.html">Corporate Rental</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="index.html#map-section">Route Map</a></li>
+            <li><a href="blog.html">Travel Blog</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="faq.html">Travel FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact &amp; Booking</h4>
+          <div class="footer-contact-list">
+            <a href="tel:+916000785570" class="footer-contact-item"><i class="fas fa-phone-alt"></i> +91 6000 785570</a>
+            <a href="mailto:info@7sisterstour.com" class="footer-contact-item"><i class="fas fa-envelope"></i> info@7sisterstour.com</a>
+            <span class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Guwahati, Assam</span>
+          </div>
+          <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour%2C%20I%20want%20to%20book%20a%20service." target="_blank" rel="noopener" class="btn btn-wa btn-sm" style="width:100%;"><i class="fab fa-whatsapp"></i> WhatsApp Contact Us</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 7sistersTour.com | All rights reserved.</p>
-        <p>Made with ❤️ for travelers</p>
+        <span>&copy; 2026 7SistersTour.com — All Rights Reserved.</span>
+        <span>Serving All 7 Sisters of Northeast India</span>
       </div>
     </div>
   </footer>
 
-  <div class="modal-overlay" id="bookingModal">
+  <!-- Universal Booking Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-box">
       <div class="modal-header">
         <div>
           <h3 class="modal-title" id="modalTitle">Book Your Service</h3>
-          <p class="modal-sub">Fill details to continue on WhatsApp</p>
+          <p class="modal-sub" id="modalSub">Fill quick details to continue on WhatsApp</p>
         </div>
-        <button class="modal-close-btn" onclick="closeBookingModal()">✕</button>
+        <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close modal">✕</button>
       </div>
       <form id="bookingForm">
         <div class="form-row">
-          <div class="form-group">
-            <label>Full Name *</label>
-            <input type="text" id="bookName" required>
-          </div>
-          <div class="form-group">
-            <label>Phone Number *</label>
-            <input type="tel" id="bookPhone" required>
-          </div>
+          <div class="form-group"><label for="bookName">Full Name *</label><input type="text" id="bookName" required></div>
+          <div class="form-group"><label for="bookPhone">Phone / WhatsApp *</label><input type="tel" id="bookPhone" required></div>
         </div>
-        <div class="form-group">
-          <label>Address *</label>
-          <input type="text" id="bookAddress" required>
+        <div class="form-row">
+          <div class="form-group"><label for="bookAddress">City / Pickup Point *</label><input type="text" id="bookAddress" required></div>
+          <div class="form-group"><label for="bookPax">No. of Travelers</label><input type="number" id="bookPax" min="1" max="50" placeholder="e.g., 2"></div>
         </div>
         <div class="form-group" id="travelersGroup">
-          <label>Travelers Type *</label>
-          <div class="travelers-grid">
-            <div class="traveler-opt" data-type="kids"><span class="t-icon">👶</span><span class="t-label">Kids</span></div>
-            <div class="traveler-opt" data-type="adults"><span class="t-icon">👤</span><span class="t-label">Adults</span></div>
-            <div class="traveler-opt" data-type="couples"><span class="t-icon">💑</span><span class="t-label">Couples</span></div>
-            <div class="traveler-opt" data-type="friends"><span class="t-icon">👥</span><span class="t-label">Friends</span></div>
-            <div class="traveler-opt" data-type="parents"><span class="t-icon">👴</span><span class="t-label">Parents</span></div>
-            <div class="traveler-opt" data-type="family"><span class="t-icon">👨👩👧</span><span class="t-label">Family</span></div>
+          <label>Traveler Type</label>
+          <div class="chip-grid">
+            <div class="chip-opt traveler-opt" data-type="Couples">💑 Couples</div>
+            <div class="chip-opt traveler-opt" data-type="Family">👨‍👩‍👧 Family</div>
+            <div class="chip-opt traveler-opt" data-type="Friends / Group">👥 Group</div>
+            <div class="chip-opt traveler-opt" data-type="Solo">🎒 Solo</div>
+            <div class="chip-opt traveler-opt" data-type="Parents">👴 Seniors</div>
+            <div class="chip-opt traveler-opt" data-type="Corporate">💼 Corporate</div>
           </div>
         </div>
         <div class="form-group" id="vehicleGroup">
-          <label>Vehicle Type *</label>
-          <div class="vehicle-grid">
-            <div class="vehicle-opt" data-vehicle="ertiga">Ertiga</div>
-            <div class="vehicle-opt" data-vehicle="innova">Innova</div>
-            <div class="vehicle-opt" data-vehicle="dzire">Swift Dzire</div>
-            <div class="vehicle-opt" data-vehicle="traveller">Traveller</div>
-            <div class="vehicle-opt" data-vehicle="thar">Thar</div>
-            <div class="vehicle-opt" data-vehicle="other">Other</div>
+          <label>Preferred Vehicle</label>
+          <div class="chip-grid">
+            <div class="chip-opt vehicle-opt" data-vehicle="Swift Dzire">Swift Dzire</div>
+            <div class="chip-opt vehicle-opt" data-vehicle="Ertiga">Ertiga</div>
+            <div class="chip-opt vehicle-opt" data-vehicle="Innova Crysta">Innova</div>
+            <div class="chip-opt vehicle-opt" data-vehicle="Tempo Traveller">Traveller</div>
+            <div class="chip-opt vehicle-opt" data-vehicle="Thar / 4x4">Thar / 4x4</div>
+            <div class="chip-opt vehicle-opt" data-vehicle="Any Suggested">Any Best</div>
           </div>
         </div>
-        <div class="form-group" id="corporateFields" style="display:none;">
-          <label>Company Name *</label>
-          <input type="text" id="companyName">
-        </div>
-        <div class="form-group">
-          <label>Travel Dates</label>
-          <input type="text" id="travelDates" placeholder="e.g., 15-20 Dec 2024">
-        </div>
+        <div class="form-group" id="corporateFields" style="display:none;"><label for="companyName">Company Name</label><input type="text" id="companyName"></div>
+        <div class="form-group"><label for="travelDates">Travel Dates</label><input type="text" id="travelDates" placeholder="e.g., 15–20 Dec 2026"></div>
         <div class="form-group">
           <div class="insurance-toggle" id="insuranceToggle">
             <div class="toggle-switch"><div class="toggle-knob"></div></div>
-            <div class="toggle-label">Add Travel Insurance (Recommended)</div>
+            <div class="toggle-label">Add Travel Insurance / ILP Assistance</div>
           </div>
         </div>
-        <button type="submit" class="btn btn-wa form-submit"><i class="fab fa-whatsapp"></i> Continue on WhatsApp</button>
+        <button type="submit" class="btn btn-wa form-submit"><i class="fab fa-whatsapp"></i> Confirm &amp; Continue on WhatsApp</button>
+        <div style="text-align:center; margin-top:10px; font-size:0.76rem; color:var(--text-muted);">
+          In a hurry? <a id="modalDirectWa" href="https://wa.me/916000785570" target="_blank" rel="noopener" style="color:var(--wa); font-weight:700; text-decoration:underline;">Skip form &amp; chat directly on WhatsApp</a>
+        </div>
       </form>
     </div>
   </div>
 
-  <a href="https://wa.me/916000785570?text=Hi%2C%20I%20want%20to%20book%20a%20tour" class="wa-float" target="_blank">
-    <div class="wa-float-pulse"></div>
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
+  <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour!" class="wa-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span>WhatsApp Us</span></a>
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div class="mobile-sticky-bar">
+    <a href="tel:+916000785570" class="btn btn-outline btn-sm"><i class="fas fa-phone-alt"></i> Call Us</a>
+    <a href="https://wa.me/916000785570?text=Hi%207%20Sisters%20Tour!" target="_blank" rel="noopener" class="btn btn-wa btn-sm"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
